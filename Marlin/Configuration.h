@@ -209,9 +209,9 @@ Here are some standard links for getting your machine calibrated:
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // E3D V6
-    #define  DEFAULT_Kp 23.05
-    #define  DEFAULT_Ki 2.71
-    #define  DEFAULT_Kd 49.10
+    #define  DEFAULT_Kp 24.89
+    #define  DEFAULT_Ki 3.20
+    #define  DEFAULT_Kd 48.33 
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -261,9 +261,9 @@ Here are some standard links for getting your machine calibrated:
 
   //120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
-    #define  DEFAULT_bedKp 92.72
-    #define  DEFAULT_bedKi 2.50
-    #define  DEFAULT_bedKd 861.38
+    #define  DEFAULT_bedKp 83.05
+    #define  DEFAULT_bedKi 2.30
+    #define  DEFAULT_bedKd 751.05
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
