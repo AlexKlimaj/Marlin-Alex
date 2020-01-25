@@ -62,7 +62,7 @@ Here are some standard links for getting your machine calibrated:
 
 // This determines the communication speed of the printer
 // :[2400,9600,19200,38400,57600,115200,250000]
-#define BAUDRATE 250000
+#define BAUDRATE 230400
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -587,8 +587,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {79.3723824,79.67657,1511.81102362205,479.379765}  // default steps per unit for Ultimaker
-#define DEFAULT_MAX_FEEDRATE          {400, 250, 5, 200}    // (mm/sec)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {78.7424428,79.400334,1511.81102362205,485.85786}  // default steps per unit for Ultimaker
+#define DEFAULT_MAX_FEEDRATE          {250, 250, 3, 200}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1050,1050,150,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
@@ -596,8 +596,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 #define DEFAULT_TRAVEL_ACCELERATION   3000    // X, Y, Z acceleration in mm/s^2 for travel (non printing) moves
 
 // The speed change that does not require acceleration (i.e. the software might assume it can be done instantaneously)
-#define DEFAULT_XYJERK                13.5    // (mm/sec)
-#define DEFAULT_ZJERK                 0.4     // (mm/sec)
+#define DEFAULT_XYJERK                12.5    // (mm/sec)
+#define DEFAULT_ZJERK                 0.3     // (mm/sec)
 #define DEFAULT_EJERK                 5.0    // (mm/sec)
 
 
