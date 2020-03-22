@@ -459,7 +459,7 @@
 #define HEATER_5_MAXTEMP 275
 #define HEATER_6_MAXTEMP 275
 #define HEATER_7_MAXTEMP 275
-#define BED_MAXTEMP      150
+#define BED_MAXTEMP      110
 
 //===========================================================================
 //============================= PID Settings ================================
@@ -479,15 +479,15 @@
   //#define SLOW_PWM_HEATERS      // PWM with very low frequency (roughly 0.125Hz=8s) and minimum state time of approximately 1s useful for heaters driven by a relay
   //#define PID_PARAMS_PER_HOTEND // Uses separate PID parameters for each extruder (useful for mismatched extruders)
                                   // Set/get with gcode: M301 E[extruder number, 0-2]
-  #define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature
+  #define PID_FUNCTIONAL_RANGE 20 // If the temperature difference between the target temperature and the actual temperature
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Ultimaker
-  #define DEFAULT_Kp 24.89
-  #define DEFAULT_Ki 3.20
-  #define DEFAULT_Kd 48.33
+  #define DEFAULT_Kp 6.55
+  #define DEFAULT_Ki 0.55
+  #define DEFAULT_Kd 19.68
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -536,9 +536,9 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 79.61
-  #define DEFAULT_bedKi 2.42
-  #define DEFAULT_bedKd 655.43
+  #define DEFAULT_bedKp 29.33
+  #define DEFAULT_bedKi 0.92
+  #define DEFAULT_bedKd 622.25
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -731,7 +731,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.7424428, 79.400334, 1511.81102362205, 485.85786 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.7424428, 79.400334, 1511.81102362205, 526.1295 }
 
 /**
  * Default Max Feed Rate (mm/s)
