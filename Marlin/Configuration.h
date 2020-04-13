@@ -730,8 +730,8 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.098385, 80.1999234227, 1511.81102362205, 526.1295 } // PETG
-// #define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.7424428, 79.400334, 1511.81102362205, 526.1295 } // PLA
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.098385, 80.1999234227, 1511.81102362205, 509.7660110454413 } // PETG
+// #define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.7424428, 79.400334, 1511.81102362205, 509.7660110454413 } // PLA
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -957,7 +957,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 0, -35.5, -3.2 }
+#define NOZZLE_TO_PROBE_OFFSET { 0, -35.5, -3.3 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
