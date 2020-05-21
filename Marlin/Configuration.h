@@ -539,9 +539,9 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 135.85
-  #define DEFAULT_bedKi 26.48
-  #define DEFAULT_bedKd 464.66
+  #define DEFAULT_bedKp 178.65
+  #define DEFAULT_bedKi 34.82
+  #define DEFAULT_bedKd 611.05
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
